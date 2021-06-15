@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "41f757d0-eac5-4cf0-872b-f34d49510ce3",
+		"name": "NeoKred",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Save Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\":\"Kartik\",\r\n    \"lastName\":\"LV\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:999/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "999",
+					"path": [
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:999/employee/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "999",
+					"path": [
+						"employee",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:999/employee/NK100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "999",
+					"path": [
+						"employee",
+						"NK100"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EmailNotify-notifyAllEmployees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/nofity/email",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"nofity",
+						"email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EmailNotify-notifyEmployeeById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:998/nofity/email/NK100",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "998",
+					"path": [
+						"nofity",
+						"email",
+						"NK100"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

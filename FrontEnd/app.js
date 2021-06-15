@@ -24,7 +24,7 @@ function createEmployee() {
     .request({
       url: "/employee",
       method: "post",
-      baseURL: "http://localhost:999",
+      baseURL: properties.employeeServiceBastURL,
       data: {
         firstName: employeeFirstName.value.trim(),
         lastName: employeeLastName.value.trim(),
